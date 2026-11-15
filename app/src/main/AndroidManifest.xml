@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
         android:label="Инвестиции"
-        android:theme="@style/Theme.Material3.DayNight.NoActionBar"
+        android:theme="@android:style/Theme.DeviceDefault"
         android:allowBackup="true">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
