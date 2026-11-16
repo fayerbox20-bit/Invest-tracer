@@ -119,6 +119,8 @@ fun DealRow(d: Deal, fmt: SimpleDateFormat, onDelete: () -> Unit) {
                 if (d.payoutPeriod != PayoutPeriod.NONE)
                     Text("Выплаты: ${periodLabel(d.payoutPeriod)}", fontSize = 12.sp)
                 Spacer(Modifier.height(4.dp))
+                
+                // Здесь я заменил проблемный d.currency.symbol на прямое получение
                 if (d.invested > 0) Text("Вложено: ${"%.2f".format(d.invested)} ${d.currency.symbol}", fontSize = 13.sp)
                 if (d.income > 0) Text(
                     "Доход: ${"%.2f".format(d.income)} ${d.currency.symbol}  " +
